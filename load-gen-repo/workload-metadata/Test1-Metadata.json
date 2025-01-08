@@ -2,34 +2,13 @@
   "jmeter_version" : "5.6.3",
   "tasks": [
     {
-    "task_name": "mobile-traffic",
-    "script_name": "use-case-1.jmx",
-    "users_file": "users1.csv",
+    "task_name": "Test Login",
+    "script_name": "NTBTestJan2025.jmx",
     "data_files": {
-        "account_file" : "accounts.csv",
-        "opportunity_file" : "opportunities.csv",
-        "contact_file" : "contacts.csv"
+               "opportunity_file" : "NTBTestData.csv",
+        
       }
-    },
-    {
-    "task_name": "agent-traffic",
-    "script_name": "use-case-2.jmx",
-    "users_file": "users2.csv",
-    "data_files": {
-        "account_file" : "accounts.csv" 
-      }
-    },
-    {
-    "task_name": "store-traffic",
-    "script_name": "use-case-3.jmx",
-    "users_file": "users3.csv",
-    "data_files": {
-        "opportunity_file" : "opportunities.csv"  
-      }
-    },
-    {
-      "task_name": "integration-traffic",
-      "script_name": "use-case-4.jmx"
-    }
+   }
+  
   ]
 }
