@@ -5,7 +5,7 @@
     "task_name": "Test Login",
     "script_name": "NTBTestJan2025.jmx",
     "data_files": {
-               "opportunity_file" : "NTBTestData.csv",
+               "opportunity_file" : "NTBTestData.csv"
         
       }
    }
