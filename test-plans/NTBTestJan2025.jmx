@@ -26,10 +26,20 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments">
+            <elementProp name="UserFile" elementType="Argument">
+              <stringProp name="Argument.name">UserFile</stringProp>
+              <stringProp name="Argument.value">${__P(opportunity_file,../data-files/NTBTestData.csv)}</stringProp>
+              <stringProp name="Argument.metadata">=</stringProp>
+            </elementProp>
+          </collectionProp>
+        </Arguments>
+        <hashTree/>
         <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config (BFL Customer)" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
-          <stringProp name="filename">D:/OneDrive - INDIUM SOFTWARE(I) PVT LTD/OneDrive - Indium Software India Private Limited/POS GIT/POS-Bajaj/load-gen-repo/data-files/NTBTestData.csv</stringProp>
+          <stringProp name="filename">${UserFile}</stringProp>
           <boolProp name="ignoreFirstLine">true</boolProp>
           <boolProp name="quotedData">false</boolProp>
           <boolProp name="recycle">false</boolProp>
